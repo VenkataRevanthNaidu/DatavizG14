@@ -7,13 +7,13 @@ Group number: G-014
 
 
 
-Group members: Ravi Teja Kodali & Venkata Revanth Naidu Danala
+Group members: Ravi Teja Kodali & Venkata Revanth Naidu
 
 Website URL: https://venkatarevanthnaidu.github.io/DatavizG14/
 
 
 
-Original Dataset: 
+Original Dataset: https://crime-data-explorer.app.cloud.gov/pages/home
 
 
 
@@ -39,8 +39,8 @@ References:
 
 
 
-1. https://ieeexplore.ieee.org/document/9373130
+1. 10.1109/TVCG.2021.3111146             
 
 
 
-2. https://ieeexplore.ieee.org/document/9373291
+2. 10.1109/ACCESS.2019.2930410
