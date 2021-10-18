@@ -1,20 +1,46 @@
-Visualization of crime data in Baltimore.
-Data visualization project cpsc - 6030
-
-GROUP NUMBER -G14
-Group members - RAVI TEJA KODALI && VENAKATA REVANTH NAIDU DANALA
-Website url - https://venkatarevanthnaidu.github.io/DatavizG14/
-ORIGINAL DATASET - https://crime-data-explorer.app.cloud.gov/pages/home
+# Visualization of Crime data in Baltimore
+Data Visualization Project CPSC-6030 
 
 
-PROJECT REPORT:
+
+Group number: G-014
 
 
-WORK AMONG GROUP MEMBERS: 
-DOUGHNUT CHART: RAVI TEJA KODALI
-GEOSPATIAL MAP: VENAKATA REVANTH NAIDU DANALA
-TIMESERIES:VENAKATA REVANTH NAIDU DANALA
-SPANKEY GRAPGH: RAVI TEJA KODALI
 
-REFERNCES: 10.1109/TVCG.2021.3111146             
-           10.1109/ACCESS.2019.2930410
+Group members: Ravi Teja Kodali & Venkata Revanth Naidu
+
+Website URL: https://venkatarevanthnaidu.github.io/DatavizG14/
+
+
+
+Original Dataset: 
+
+
+
+
+Project Report:
+
+
+
+Work among group members:
+
+
+
+| Visualization | Author |
+| --- | --- |
+| 1. Doughnut Chat  | Ravi Teja Kodali  |
+| 2. Geospatial |Venkata Revanth Naidu Danala |
+| 3. Time - Series Grpah| Venkata Revanth Naidu Danala |
+| 4. Sankey Graph | Ravi Teja Kodali |
+
+
+
+References:
+
+
+
+1. https://ieeexplore.ieee.org/document/9373130
+
+
+
+2. https://ieeexplore.ieee.org/document/9373291
