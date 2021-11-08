@@ -81,18 +81,18 @@ is nothing but the total number of crimes that have been occurred in a neighborh
  Y-axis intensity are displayed. In the coming weeks, we will apply styles. The visualization is done for only
  one year; we will complete the plots for the remaining five years and apply drop-down to the required year.</a>
 <h2><center>Probability Vs Intensity</center></h2>
- 
-<div id="observablehq-chart-14529de6"></div>
-
+<div id="observablehq-scatter_plot-a2de470c"></div>
+<div id="observablehq-viewof-genre_option-a2de470c"></div>
 
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-import define from "https://api.observablehq.com/d/76c31267e870d2f5.js?v=3";
+import define from "https://api.observablehq.com/@ecd4fb4b45262cf5/disney-shows-and-movies-scatter-plot.js?v=3";
 new Runtime().module(define, name => {
-  if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-14529de6"));
+  if (name === "scatter_plot") return new Inspector(document.querySelector("#observablehq-scatter_plot-a2de470c"));
+  if (name === "viewof genre_option") return new Inspector(document.querySelector("#observablehq-viewof-genre_option-a2de470c"));
+  return ["selected_movies"].includes(name);
 });
 </script>
-
 <h2>Second_visualization<h2>
 <h2><center>Street Level Map Visualization of crime</center></h2>
  <a>We applied the Street-level Geospatial map of Baltimore city and displayed the crime that has more probability of occurring and the intensity of the crime in each neighborhood in Baltimore city. We presented all the neighborhoods that are in the Scatterplot in Geospatial Map. By clicking on the location, the crime that has occurred more number of times, Probability, and Intensity of the crimes will be displayed. To get the map of Baltimore, some Java scripts libraries are used, namely Leaflet, Open Street map, and Map box. The same process will
