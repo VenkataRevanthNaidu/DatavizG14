@@ -18,22 +18,6 @@ Original Dataset: https://crime-data-explorer.app.cloud.gov/pages/home
 
 
 
-Project Report:
-
-
-
-Work among group members:
-
-
-
-| Visualization | Author |
-| --- | --- |
-| 1. Doughnut Chat  | Ravi Teja Kodali  |
-| 2. Geospatial |Venkata Revanth Naidu Danala |
-| 3. Time - Series Grpah| Venkata Revanth Naidu Danala |
-| 4. Sankey Graph | Ravi Teja Kodali |
-
-
 
 References:
 
