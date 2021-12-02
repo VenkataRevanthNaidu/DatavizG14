@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Baltimore City Crime Data Visualization</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+
+
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+
+  <!-- Load Leaflet from CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+     <!-- Load Esri Leaflet from CDN -->
+  <script src="https://unpkg.com/esri-leaflet@3.0.3/dist/esri-leaflet.js"
+  integrity="sha512-kuYkbOFCV/SsxrpmaCRMEFmqU08n6vc+TfAVlIKjR1BPVgt75pmtU9nbQll+4M9PN2tmZSAgD1kGUCKL88CscA=="
+  crossorigin=""></script>
+
+<!-- Load Esri Leaflet Vector from CDN -->
+<script src="https://unpkg.com/esri-leaflet-vector@3.1.1/dist/esri-leaflet-vector.js"
+  integrity="sha512-7rLAors9em7cR3/583gZSvu1mxwPBUjWjdFJ000pc4Wpu+fq84lXF1l4dbG4ShiPQ4pSBUTb4e9xaO6xtMZIlA=="
+  crossorigin=""></script>
+
+  <style>
+    #map  {
+	height:550px;
+		width:740px;
+		margin:0;}
+
+          .chart-container {
+            height: 550px;
+            width: 740px;
+          }
+        
+          #info-pane {
+		position: absolute;
+            top: 190px;
+            right: 10px;
+            z-index: 400;
+            padding:0;
+            background: white;
+          }
+
+body {font-family: Arial;}
+h1 {
+    color: Blue;
+    text-align: center;
+}
+
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    color: aliceblue;
+}
+
+
+.tab button {
+    background-color: inherit;
+    
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: aliceblue;
+}
+    .tab a{
+        color: black;
+    }
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+
+.tab button:active {
+    background-color: #ccc;
+}
+    
+    
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+  </style>
+  </head>
+  <body id="body" style="background-color:rgb(240,240,240);">
+<h1 align="center" ><!--marquee width="50%" direction="side"-->Baltimore City Crime Visulization<!--/marquee--></h1>
+<div class="tab" align="center">
+ <button> <a style="text-decoration: none" href="index.html">Home</a></button>
+  <button ><a style="text-decoration: none" href="index1.html">Main Visualization</a></button>  
+  <button ><a style="text-decoration: none" href="index2.html">Background Work& Data</a></button>
+  <button ><a style="text-decoration: none" href="index3.html">Contact</a></button>
+  
+</div>
+<div>
+<a><center><b>Geo Map:</b> Using leaflet and coordinates of Baltimore city, we have created the street level map of Baltimore city. The scatter plot is designed for interaction. Coming to the interaction, we have kept a mouse over in a scatter plot where a user can see the probability and intensity, and then the selected location will appear on the map. The user can also filter the data by choosing the locations in the map based on their required areas,
+ and then the places will be filtered in the scatter plot, and impact and intensity will be displayed.</center></a>
+</div>
+<!--maplayerlink-->
+        <!-- Load Chart.js from CDN -->
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.1.1/d3.min.js"></script>
+       <div> 
+        <div id="map"></div>
+        <div id="info-pane" class="leaflet-bar chart-container">
+          <canvas id="chartCanvas"></canvas>
+	<script src="map2.js"></script></div>
+<div>
+<center><p><b>Line chart:</b>We have selected the significant hotspots which have more trends. We are trying to show overall trends of all six years. Initially, we planned to create an interaction for the line chart, and we are currently working on that; once we complete that, we will update the website. The interaction we thought to do is while we click on a hotspot in the scatter plot, both map and the line chart should be changed. 
+The map should display the location with impact and intensity, and the line chart should show the overall trend of the location from six years.<center></P>
+<select id="selectButton"></select>
+<div id="my_dataviz"class="svg-container"></div>
+<script src="line.js"></script></center>
+</div>  
+</body>
+</html>
