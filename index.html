@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Baltimore City Crime Data Visualization</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+<style>
+
+body {font-family: Arial;}
+h1 {
+    color: Blue;
+    text-align: center;
+}
+
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    color: aliceblue;
+}
+
+
+.tab button {
+    background-color: inherit;
+    
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: aliceblue;
+}
+    .tab a{
+        color: black;
+    }
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+
+.tab button:active {
+    background-color: #ccc;
+}
+  
+    
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+</style>
+</head>
+<body style="background-color:rgb(240,240,240);">
+
+<h1 align="center" ><!--marquee width="50%" direction="side"-->Baltimore City Crime Visulization<!--/marquee--></h1>
+
+
+<div class="tab" align="center">
+ <button> <a style="text-decoration: none" href="index.html">Home</a></button>
+  <button ><a style="text-decoration: none" href="index1.html">Main Visualization</a></button>  
+  <button ><a style="text-decoration: none" href="index2.html">Background Work& Data</a></button>
+  <button ><a style="text-decoration: none" href="index3.html">Contact</a></button>
+  
+</div>
+
+<div>
+<h3><center>INTRODUCTION</center></h3>
+<p><center>In large cities, tracing crime patterns and analyzing them is a challenging spatiotemporal problem. 
+This hardness is linked to two main factors:the sparse nature of crime activity and its widespread distribution.Generally hotspots will be classified by total number of crimes occurred in a particular location.
+But, areas with high probability can be more dangerous this is because of neglecting the possibility of crimes that is likely to occur. 
+This problem can be solved by computing probability of a specific location. In this project we are going to specify a location is a hotspot by computing probability.</center></p>
+
+
+<p><center>As graduate students(6030), we focused on relating problems to state-of-the-art research. We are interested in visualizing the crimes in Baltimore city.
+ We picked an article in IEEE named “CriPAV: Street-Level Crime Patterns Analysis and Visualization".</center></p>
+
+<h3><center>OVERVIEW OF VISUALIZATION</center></h3>
+<p><center>By placing data in a visual context, such as maps or graphs, data visualization helps us understand what it means. This makes the data more natural to understand for the human mind, 
+making it easier to see trends, patterns, and outliers in vast data sets.</center></P>
+
+<h3><center>DESCRIPTION OF OUR VISUALIZATION</center></h3>
+<p><center>We developed a scatter plot using d3 library where, we plotted a probability vs intensity scatter plot. 
+We place a drop down to select a year from 2012 to 2017. We include 166 locations in each year. To develop a map we used leaflet which is an open source library of Java script and with the help of coordinates we got Baltimore city street level map and then created layers of map.
+Then we interacted a scatter plot with the map where, if we select a location in scatter plot it will only show that particular location where remaining locations will be disappear until we remove the cursor from scatter plot. 
+The user can also filter the data by choosing the locations in the map based on their required areas, and then the places will be filtered in the scatter plot, and impact and intensity will be displayed.</cenetr></p>
+</div>
+<div>
+<h3><b><center>Probability vs Intensity</center><b></h3>
+<select id="year"></select>
+    <div id='details'></div>
+    <svg id="chart"></svg>
+    <script src="index.js"></script>
+</div>
+</body>
+</html> 
+
