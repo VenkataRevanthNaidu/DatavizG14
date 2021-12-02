@@ -12,7 +12,7 @@ var svg = d3.select("#my_dataviz")
     .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
 //Read the data
-d3.csv("Line Chart set.csv").then( function(data) {
+d3.csv("https://raw.githubusercontent.com/VenkataRevanthNaidu/DatavizG14/main/Line%20Chart%20set.csv").then( function(data) {
 
     // List of groups (here I have one group per column)
     const allGroup = new Set(data.map(d => d.Neighbourhood))
