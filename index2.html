@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Baltimore City Crime Data Visualization</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+<style>
+
+body {font-family: Arial;}
+h1 {
+    color: Blue;
+    text-align: center;
+}
+
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    color: aliceblue;
+}
+
+
+.tab button {
+    background-color: inherit;
+    
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: aliceblue;
+}
+    .tab a{
+        color: black;
+    }
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+
+.tab button:active {
+    background-color: #ccc;
+}
+  
+    
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+</style>
+</head>
+<body style="background-color:rgb(240,240,240);">
+
+<h1 align="center" ><!--marquee width="50%" direction="side"-->Baltimore City Crime Visulization<!--/marquee--></h1>
+
+
+<div class="tab" align="center">
+ <button> <a style="text-decoration: none" href="index.html">Home</a></button>
+  <button ><a style="text-decoration: none" href="index1.html">Main Visualization</a></button>  
+  <button ><a style="text-decoration: none" href="index2.html">Background Work& Data</a></button>
+  <button ><a style="text-decoration: none" href="index3.html">Contact</a></button>
+  
+</div>
+<div>
+<h3><center>Literature Survey</center></h3>
+<p style="font-family:courier;"><center>This research paper mainly focuses on analyzing the crimes based on Probability vs Intensity. 
+We found this paper interesting because they classified hotspots based on probability vs intensity, which is a different method.
+ After categorizing the hot spots, they have presented that on a Geospatial map where these visualizations may be helpful to solve real-world problems. 
+Taking this as inspiration, we want to use these concepts for our data set and analyze the crimes in Baltimore city from 2012 to 2017.
+</center></P>
+<center><a href="https://ieeexplore.ieee.org/document/9536407">CriPAV: Street-Level Crime Patterns Analysis and Visualization</a></center>
+<center><img src="photo.png" width="600" height="250"></center>
+<h3><center>EXPLANATION OF DATASET</center></h3>
+<p><center>There are 10 attributes in our data set. There are many Neighborhoods, its district, where type of crime is description. Each crime has a unique crime code, the year of occurring, weapon used, Longitude, Latitude, Impact nothing but probability and the intensity of the crime.
+</center></p>
+<center><a href="http://www.fbi.gov/about-us/cjis/ucr/ucr"> Data Set Source</a></center>
+<h3><center>Data processing</center></h3>
+<p><center>We have done the data preprocessing to find out the Probability and intensity. 
+The probability and the intensity is calculated by using <b>Pandas</b> where, we selected a location and calculated the probability of all crimes then we picked the crime which has most intensity. Like wise, the probability is calculated for all the locations from 2012 to 2017. The formula we used to calculate the probability is max(crime)/total number of crime at a specific location.
+ As we are showing the data for a specific year we divided the data set into year wise by ignoring the day and month.</center></p>
+</div>
+</body>
+</html> 
