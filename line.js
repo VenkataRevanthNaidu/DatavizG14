@@ -41,7 +41,7 @@ d3.csv("https://raw.githubusercontent.com/VenkataRevanthNaidu/DatavizG14/main/tr
 
     // Add Y axis
     const y = d3.scaleLinear()
-      .domain([0, d3.max(data, function(d) { return +d.Intensity; })]).nice()
+      .domain([0, d3.max(data, function(d) { return +d.Intenisty; })]).nice()
       .range([ height, 0 ]);
     svg.append("g")
       .call(d3.axisLeft(y));
@@ -53,7 +53,7 @@ d3.csv("https://raw.githubusercontent.com/VenkataRevanthNaidu/DatavizG14/main/tr
         .datum(data.filter(function(d){return d.Neighbourhood=="Beechfield/Ten Hills/West Hills"}))
         .attr("d", d3.line()
           .x(function(d) { return x(d.CrimeYear) })
-          .y(function(d) { return y(+d.Intensity) })
+          .y(function(d) { return y(+d.Intenisty) })
         )
         .attr("stroke", function(d){ return myColor("valueA") })
         .style("stroke-width", 4)
@@ -72,7 +72,7 @@ d3.csv("https://raw.githubusercontent.com/VenkataRevanthNaidu/DatavizG14/main/tr
           .duration(1000)
           .attr("d", d3.line()
             .x(function(d) { return x(d.CrimeYear) })
-            .y(function(d) { return y(+d.Intensity) })
+            .y(function(d) { return y(+d.Intenisty) })
           )
           .attr("stroke", function(d){ return myColor(selectedGroup) })
     }
