@@ -50,7 +50,7 @@ d3.csv("https://raw.githubusercontent.com/VenkataRevanthNaidu/DatavizG14/main/tr
     const line = svg
       .append('g')
       .append("path")
-        .datum(data.filter(function(d){return d.Neighbourhood=="Armistead Gardens"}))
+        .datum(data.filter(function(d){return d.Neighbourhood=="Beechfield/Ten Hills/West Hills"}))
         .attr("d", d3.line()
           .x(function(d) { return x(d.CrimeYear) })
           .y(function(d) { return y(+d.Intensity) })
