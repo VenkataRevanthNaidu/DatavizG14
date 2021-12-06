@@ -14,7 +14,7 @@
     }).addTo(map);
 
      treesFeatureLayer.bindPopup(function(layer){
-	return L.Util.template('<p>Crime:<strong>{Description}</strong><br>location:<strong>{Neighbourhood}</strong></p>',layer.feature.properties);
+	return L.Util.template('<p>Frequently occurred Crime:<strong>{Description}</strong><br>location:<strong>{Neighbourhood}</strong></p>',layer.feature.properties);
 	});
     // STEP 2: DEFINE A CHART
     // this is a static scatterplot chart definition for now, but it will
