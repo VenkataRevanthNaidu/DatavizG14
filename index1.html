@@ -120,10 +120,12 @@ h1 {
 	<script src="map2.js"></script></div>
 <div>
 <center><p>We have selected the significant hotspots which have more trends. We are trying to show overall trends of all six years. Initially, we planned to create an interaction for the line chart, and we are currently working on that; once we complete that, we will update the website. The interaction we thought to do is while we click on a hotspot in the scatter plot, both map and the line chart should be changed. 
-The map should display the location and the crime that occured most, and the line chart should show the overall trend of that location from six years.<center></P>
-<select id="selectButton"></select>
-<div id="my_dataviz"class="svg-container"></div>
-<script src="line.js"></script></center>
+The map should display the location and the crime that occured most, and the line chart should show the overall trend of that location from six years.<center></P></div>
+<div position:relative; id="my_dataviz"class="svg-container">
+   <div width = "1000px" height = "400px"> <svg id="map" width="450" height="460" style="float:left"></svg>
+    <div id="details"></div></div>
+   <div  width = "1000px" height = "400px"><svg id="line" width="450" height="650" style="float:right"></svg></div></div>
+    <script src="index1.js"></script>
 </div>  
 </body>
 </html>
