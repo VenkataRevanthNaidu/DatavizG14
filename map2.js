@@ -9,7 +9,7 @@
     //create and add a feature layer
     // features from this layer will appear in the Chart.js scatterplot
     var treesFeatureLayer = L.esri.featureLayer({
-        url: 'https://services3.arcgis.com/bO7Hf5i6aZdITjmq/arcgis/rest/services/crime_2012/FeatureServer/0'
+        url: 'https://services3.arcgis.com/bO7Hf5i6aZdITjmq/arcgis/rest/services/gmap/FeatureServer/0'
 
     }).addTo(map);
 
