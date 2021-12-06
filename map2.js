@@ -21,7 +21,7 @@
     // soon become dynamic by responding to map and feature layer events
     var initialChartData = {
       datasets: [{
-        label: 'Crime HotSpots in Baltimore 2012',
+        label: 'Crime HotSpots in Baltimore from 2012 to 2017',
         // the data values are empty at this moment
         // and will be updated dynamically below
         data: []
