@@ -109,8 +109,7 @@ var colorScale=d3.scaleLinear()
                                         console.log(labels)
                                 var frequency = data.map(d=>d.count)
                                             console.log(frequency)
-let desiredCountry =[i.properties.Community];
-console.log(desiredCountry)
+
 const margin = {top: 10, right: 30, bottom: 40, left: 60},
     width = 450-margin.left - margin.right,
     height = 360 - margin.top - margin.bottom;
