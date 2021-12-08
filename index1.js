@@ -63,7 +63,7 @@ var colorScale=d3.scaleLinear()
                               .duration(200)
                               .style("stroke", "transparent")
                           }
-        var countries=svg.append("g")
+        var county =svg.append("g")
                             .selectAll("path")
                             .data(data.features)
                             .enter()
