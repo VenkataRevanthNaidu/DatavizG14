@@ -7,12 +7,12 @@
   
     //create and add a feature layer
     var treesFeatureLayer = L.esri.featureLayer({
-        url: 'https://services3.arcgis.com/bO7Hf5i6aZdITjmq/arcgis/rest/services/gmap/FeatureServer/0'
+        url: 'https://services3.arcgis.com/bO7Hf5i6aZdITjmq/arcgis/rest/services/final_dataset/FeatureServer/0'
 
     }).addTo(map);
 
      treesFeatureLayer.bindPopup(function(layer){
-	return L.Util.template('<p>Frequently occurred Crime:<strong>{Description}</strong><br>location:<strong>{Neighbourhood}</strong></p>',layer.feature.properties);
+	return L.Util.template('<p>Frequently occurred Crime:<strong>{Description}</strong><br>Crime Year<strong>{CrimeDate}</strong><br>location:<strong>{Neighbourhood}</strong></p>',layer.feature.properties);
 	});
     // STEP 2: DEFINE A CHART
     var initialChartData = {
