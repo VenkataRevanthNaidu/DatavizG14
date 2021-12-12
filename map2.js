@@ -7,7 +7,7 @@
   
     //create and add a feature layer
     var treesFeatureLayer = L.esri.featureLayer({
-        url: 'https://services3.arcgis.com/bO7Hf5i6aZdITjmq/arcgis/rest/services/final_dataset/FeatureServer/0'
+        url: 'https://services3.arcgis.com/bO7Hf5i6aZdITjmq/arcgis/rest/services/final_data/FeatureServer/0'
 
     }).addTo(map);
 
